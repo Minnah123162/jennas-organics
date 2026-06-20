@@ -1,10 +1,15 @@
+import { Routes, Route } from 'react-router-dom';
+import Navbar from "./components/Navbar";
+import Home from './pages/Home'
+
 function App(){
   return(
-    <div className="min-h-screen flex items-center justify-center bg-green-50">
-      <h1 className="text-5xl font-bold text-green-700">
-        Jenna's Organics
-      </h1>
-    </div>
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 }
 
