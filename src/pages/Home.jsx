@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import TrustBadges from "../components/TrustBadges";
 import FeaturedProducts from "../components/FeaturedProducts";
+import WhyUs from "../components/WhyUs";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <TrustBadges />
       <FeaturedProducts />
+      <WhyUs />
     </div>
   );
 }

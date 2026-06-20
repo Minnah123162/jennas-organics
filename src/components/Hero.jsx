@@ -2,8 +2,8 @@ import heroImg from "../assets/hero-products.jpeg";
 
 function Hero(){
     return(
-        <section className="bg-[#faf7f0] px-6 py-12 md:py-20 lg:py-28">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-24 max-w-6xl mx-auto">
+        <section className="bg-[#faf7f0] px-8 md:px-14 py-12 md:py-20 lg:py-28">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-24 w-full max-w-[1450px] mx-auto">
 
                 <div className="flex-2 lg:flex-1 text-center md:text-left">
                     <span className="bg-[#eaf3de] text-[#3b6d11] text-xs lg:text-sm px-3 py-2 lg:px-4 lg:py-3 rounded-full">

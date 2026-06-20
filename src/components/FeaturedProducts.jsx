@@ -44,7 +44,7 @@ function FeaturedProducts(){
     ];
 
     return(
-        <section className="bg-[#faf7f0] px-9 py-12 md:py-16">
+        <section className="bg-[#faf7f0] px-10 md:px-14 py-12 md:py-16">
             <div className="w-full max-w-[1500px] mx-auto">
 
                 <div className="flex items-center justify-between mb-8">
@@ -61,7 +61,7 @@ function FeaturedProducts(){
                     </button>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-6 lg:gap-10">
                     {products.map((product) => (
                         <div
                             key={product.id}

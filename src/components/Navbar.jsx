@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Navbar(){
     const[menuOpen, setMenuOpen] = useState(false); 
     return(
-        <nav className="bg-[#faf7f0] border-b border-[#c0dd97] px-6 lg:px-12 py-4">
+        <nav className="bg-[#faf7f0] border-b border-[#c0dd97] px-6 md:px-8 lg:px-12 py-4">
             <div className="flex items-center justify-between w-full">
                 <div className="flex items-center gap-2">
                     <div className="w-8 h-8 lg:w-10 lg:h-10 bg-[#3b6d11] rounded-full flex items-center justify-center">
