@@ -44,8 +44,8 @@ function FeaturedProducts(){
     ];
 
     return(
-        <section className="bg-[#faf7f0] px-6 py-12 md:py-16">
-            <div className="max-w-6xl mx-auto">
+        <section className="bg-[#faf7f0] px-9 py-12 md:py-16">
+            <div className="w-full max-w-[1500px] mx-auto">
 
                 <div className="flex items-center justify-between mb-8">
                     <div>
@@ -61,17 +61,17 @@ function FeaturedProducts(){
                     </button>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-10">
                     {products.map((product) => (
                         <div
                             key={product.id}
-                            className="bg-white rounded-2xl overflow-hidden border border-[#c0dd97] hover:shadow-md transition cursor-pointer"
+                            className="bg-white rounded-2xl overflow-hidden border border-[#c0dd97] hover:shadow-md lg:hover:shadow-xl transition cursor-pointer"
                             onClick={() => navigate("/products")}
                         >
                             <img
                                 src={product.image}
                                 alt={product.name}
-                                className="w-full h-48 md:h-56 object-cover"
+                                className="w-full h-48 md:h-56 lg:h-80 object-cover"
                             />
                             <div className="p-3">
                                 <span className={`text-xs md:text-sm lg:text-base px-2 py-1 rounded-full font-medium ${product.tagColor}`}>
