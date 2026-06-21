@@ -15,7 +15,7 @@ function TrustBadges(){
                 {badges.map((badge, index) =>(
                     <div key={index} className="flex flex-col items-center justify-center py-6 md:py-8 lg:py-12 px-4 text-center">
                         <span className="mb-2 lg:mb-4">{badge.icon}</span>
-                        <span className="text-xs md:text-sm lg:text-lg text-gray-500">{badge.label}</span>
+                        <span className="text-xs md:text-sm md:font-medium lg:font-semibold lg:text-lg text-gray-500">{badge.label}</span>
                     </div>
                 ))}
             </div>

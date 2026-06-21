@@ -14,7 +14,7 @@ function FeaturedProducts(){
             name: "Makhana Oats + Almonds & Cashews Powder",
             age: "6+ months",
             tag: "Bestseller",
-            tagColor: "bg-[#3b6d11] text-white",
+            tagColor: "bg-[#7FB39A]/30 text-[#27500a] font-semibold",
             image: makhanaOats,
         },
         {
@@ -22,7 +22,7 @@ function FeaturedProducts(){
             name: "Sprouted Ragi Choco Malt with Makhana",
             age: "8+ months",
             tag: "New",
-            tagColor: "bg-[#eaf3de] text-[#3b6d11]",
+            tagColor: "bg-[#F4A261]/30 text-[#7a3d00] font-semibold",
             image: chocoMalt,
         },
         {
@@ -30,7 +30,7 @@ function FeaturedProducts(){
             name: "Ragi Strawberry Pancake Mix",
             age: "8+ months",
             tag: "Popular",
-            tagColor: "bg-[#eaf3de] text-[#3b6d11]",
+            tagColor: "bg-[#E9C46A]/30 text-[#7a5c00] font-semibold",
             image: ragiStrawberry,
         },
         {
@@ -38,7 +38,7 @@ function FeaturedProducts(){
             name: "Kunnan-Kaya Powder",
             age: "6+ months",
             tag: "Popular",
-            tagColor: "bg-[#eaf3de] text-[#3b6d11]",
+            tagColor: "bg-[#E9C46A]/30 text-[#7a5c00] font-semibold",
             image: kunnanKaya,
         },
     ];
@@ -74,7 +74,7 @@ function FeaturedProducts(){
                                 className="w-full h-48 md:h-56 lg:h-80 object-cover"
                             />
                             <div className="p-3">
-                                <span className={`text-xs md:text-sm lg:text-base px-2 py-1 rounded-full font-medium ${product.tagColor}`}>
+                                <span className={`text-xs md:text-sm lg:text-base px-2 py-1 font-medium ${product.tagColor}`}>
                                     {product.tag}
                                 </span>
                                 <p className="text-sm md:text-base lg:text-lg font-medium lg:font-semibold text-[#27500a] mt-2 leading-snug">{product.name}</p>

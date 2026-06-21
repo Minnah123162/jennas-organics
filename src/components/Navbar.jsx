@@ -1,19 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Navbar(){
     const[menuOpen, setMenuOpen] = useState(false); 
     return(
         <nav className="bg-[#faf7f0] border-b border-[#c0dd97] px-6 md:px-8 lg:px-12 py-4">
             <div className="flex items-center justify-between w-full">
-                <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-[#3b6d11] rounded-full flex items-center justify-center">
-                        <span className="text-sm lg:text-lg">🌿</span>
+                <div className="flex items-center gap-4">
+                    <div className="bg-[#eaf3de] rounded-full p-0.5 border border-[#c0dd97]">
+                        <img src={logo} alt="Jenna's Organics" className="w-16 h-16 object-contain" />
                     </div>
-                    <span className="text-[#3b6d11] font-semibold text-xl lg:text-2xl">Jenna's Organics</span>
+                    <span className="text-[#3b6d11] font-medium lg:font-semibold text-lg md:text-xl lg:text-2xl">Jenna's Organics</span>
                 </div>
 
-                <div className="hidden md:flex gap-6 lg:gap-10 text-sm lg:text-lg text-gray-500 font-medium lg:font-semibold">
+                <div className="hidden md:flex gap-6 lg:gap-10 text-sm md:text-base lg:text-lg text-gray-500 font-medium lg:font-semibold">
                     <Link to="/" className="hover:text-[#3b6d11]">Home</Link>
                     <Link to="/products" className="hover:text-[#3b6d11]">Products</Link>
                     <Link to="/about" className="hover:text-[#3b6d11]">About</Link>
